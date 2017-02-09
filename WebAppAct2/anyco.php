@@ -6,7 +6,7 @@
 	do_query($conn, 'SELECT * FROM DEPARTMENTS');
 	ui_print_footer(date('Y-m-d H:is:'));
 
-	function_query($conn, $query){
+	function do_query($conn, $query){
 		$stid = oci_parse($conn, $query);
 		$r = oci_execute($stid, OCI_DEFAULT);
 		
