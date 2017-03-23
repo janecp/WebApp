@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON Array</title>
+	<script language="javascript">
+
+	var os = { "Windows" : [
+			{ "platform" : "Windows", "version" : "Windows Server 2008 R2 Enterprise", "type" : "Server" },
+			{ "platform" : "Windows", "version" : "Windows Server 2003 R2 Web Edition", "type" : "Server" }
+		],
+			"Mac" : [
+			{ "platform" : "Mac", "version" : "Mac OS X Server", "type" : "Server" },
+			{ "platform" : "Mac", "version" : "Mac OS X 10.0", "type" : "Server" }
+		],
+			"Linux" : [
+			{ "platform" : "Linux", "version" : "Ubuntu", "type" : "Desktop" },
+			{ "platform" : "Linux", "version" : "Hanthana", "type" : "Desktop" }
+		]
+	}
+
+	var i = 0
+	document.writeln("</tr></table>");
+	for(i=0;i<os.Windows.length;i++)
+	{
+		document.writeln("<td>");
+		document.writeln("<table border='1' width=100 >");
+ 		document.writeln("<tr><td><b>Platform</b></td><td width=50>"
+ 		+ os.Windows[i].platform+"</td></tr>");
+		 document.writeln("<tr><td><b>Version</b></td><td width=50>"
+ 		+ os.Windows[i].version +"</td></tr>");
+ 		document.writeln("<tr><td><b>Type of Machine</b></td><td width=50>"
+ 		+ os.Windows[i].type +"</td></tr>");
+		 document.writeln("</table>");
+ 		document.writeln("</td>");
+
+	}
+
+	for(i=0;i<os.Mac.length;i++)
+	{
+		document.writeln("<td>");
+		document.writeln("<table border='1' width=100 >");
+ 		document.writeln("<tr><td><b>Platform</b></td><td width=50>"
+ 		+ os.Mac[i].platform+"</td></tr>");
+		 document.writeln("<tr><td><b>Version</b></td><td width=50>"
+ 		+ os.Mac[i].version +"</td></tr>");
+ 		document.writeln("<tr><td><b>Type of Machine</b></td><td width=50>"
+ 		+ os.Mac[i].type +"</td></tr>");
+		 document.writeln("</table>");
+ 		document.writeln("</td>");
+
+	}
+
+	for(i=0;i<os.Linux.length;i++)
+	{
+		document.writeln("<td>");
+		document.writeln("<table border='1' width=100 >");
+ 		document.writeln("<tr><td><b>Platform</b></td><td width=50>"
+ 		+ os.Linux[i].platform+"</td></tr>");
+		 document.writeln("<tr><td><b>Version</b></td><td width=50>"
+ 		+ os.Linux[i].version +"</td></tr>");
+ 		document.writeln("<tr><td><b>Type of Machine</b></td><td width=50>"
+ 		+ os.Linux[i].type +"</td></tr>");
+		 document.writeln("</table>");
+ 		document.writeln("</td>");
+
+	}
+
+	document.writeln("</tr></table>");
+	</script>
+</head>
+<body>
+
+</body>
+</html>
